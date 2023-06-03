@@ -1,0 +1,34 @@
+
+#skills{
+    height: 400px;
+    box-sizing: border-box;
+    padding: .4%;
+}
+#skillsTxt{
+    font-size: 2.2rem;
+    margin-left: 8%;
+}
+
+#allSkills{
+    display: flex;
+    margin-left: 10%;
+    overflow-x: scroll;
+    height: 280px;
+}
+#logoImgWrapper{
+    margin-right: 10%;
+    margin-top: 8%;
+    text-align: center;
+}
+#logoImgWrapper{
+    color: grey;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+#logosImg {
+    height: 70px;
+    width: 70px;
+    margin-right: 1%;
+    margin-top: 2%;
+}

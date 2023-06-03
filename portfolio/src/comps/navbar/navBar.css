@@ -1,0 +1,34 @@
+
+#nav{
+    position: relative;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    border-top: none;
+    border-left: none;
+    border-width: 0.1px;
+}
+#nav h1{
+    position: relative;
+    left: 74%;
+    top: -8%;
+    z-index: 4;
+}
+#terence{
+    font-family: 'Caveat', cursive;
+}
+#windowsImg{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -.2%;
+    cursor: pointer;
+}
+@media only screen and (max-width: 780px) {
+    #nav h1{
+        left: 60%;
+    }
+}

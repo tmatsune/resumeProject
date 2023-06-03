@@ -1,0 +1,28 @@
+
+#navbottom{
+    height: 56px;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    background: rgb(203, 203, 203);
+    display: flex;
+}
+#navBtmBtn{
+    height: 38px;
+    width: 96px;
+    margin-top: 6px;
+    border: inset;
+    margin-left: 6px;
+    border-left: 4px inset rgb(138, 138, 138, 0.4);
+    border-top: 4px inset rgb(138, 138, 138, 0.4);
+    border-right: 4px inset rgb(0, 0, 0);
+    border-bottom: 4px inset rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+}
+#windLogo{
+    height: 21px;
+    width: 26px;
+    
+}

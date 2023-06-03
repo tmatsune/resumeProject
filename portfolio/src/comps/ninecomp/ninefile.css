@@ -1,0 +1,70 @@
+
+
+#ninefile{
+    height: 500px;
+    width: 440px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    background-color: rgb(172, 172, 172);
+}
+#nineTop{
+    position: absolute;
+    top: 1%;
+    width: 98%;
+    margin-left: 1%;
+    background: rgb(0, 0, 162);
+    height: 30px;
+}
+#nineTop h1{
+    position: absolute;
+    margin-top: 0%;
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 1%;
+}
+#exitBtn{
+    border: inset;  
+    position: absolute;
+    margin-left: 94%;
+    margin-top: 3px;
+    border-left: 2px inset rgb(138, 138, 138, 0.4);
+    border-top: 2px inset rgb(138, 138, 138, 0.4);
+    border-right: 2px inset rgb(0, 0, 0);
+    border-bottom: 2px inset rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
+}
+#ninePortfolio{
+    height: 88.8%;
+    width: 95.6%;
+    border-right: 4px inset rgb(138, 138, 138, 0.4);
+    border-bottom: 4px inset rgb(138, 138, 138, 0.4);
+    border-left: 4px inset rgb(0, 0, 0);
+    border-top: 4px inset rgb(51, 51, 51);
+    font-family: 'VT323', monospace;
+    background: rgb(255, 243, 195);
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 2%;
+    box-sizing: border-box;
+    padding: 2%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+#ninePorfolio h1{
+    font-family: 'VT323', monospace;
+}
+#portLink{
+    color: purple;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#ninePic{
+    height: 160px;
+    width: 122px;
+    margin-left: 34%;
+    image-rendering: pixelated;
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(100%);
+}

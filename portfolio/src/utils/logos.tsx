@@ -1,0 +1,16 @@
+
+import L1 from "../../src/imgs/logos/firebase.svg"
+import L2 from "../../src/imgs/logos/flask.svg"
+import L3 from "../../src/imgs/logos/github.svg"
+import L4 from "../../src/imgs/logos/go.svg"
+import L5 from "../../src/imgs/logos/html.svg"
+import L6 from "../../src/imgs/logos/icons8-css.svg"
+import L7 from "../../src/imgs/logos/javascript.svg"
+import L8 from "../../src/imgs/logos/nestjs.svg"
+import L9 from "../../src/imgs/logos/mongodb.svg"
+import L11 from "../../src/imgs/logos/postgresql.svg"  
+import L12 from "../../src/imgs/logos/python.svg"
+import L13 from "../../src/imgs/logos/react.svg"
+import L14 from "../../src/imgs/logos/typescript.svg"
+import L16 from "../../src/imgs/logos/graphql.svg"
+export const LOGOS = [L14, L13, L3, L4, L5, L6, L7, L8, L9, L11, L12, L2, L1, L16]

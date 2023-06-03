@@ -1,0 +1,66 @@
+#projDesc {
+    box-sizing: border-box;
+    padding: 4%;
+    margin-left: 6%;
+    margin-top: -6%;
+}
+#projDesc h1{
+    font-size: 3rem;
+}
+#projDesc p {
+    color: grey;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+#techs {
+    height: 40px;
+    width: 40px;
+    margin-left: 4%;
+}
+
+#projImg {
+    height: 360px;
+    width: 640px;
+    margin-left: 6%;
+    border-radius: 8px;
+    box-shadow: 4px 6px 24px 4px rgb(0, 0, 0, 0.5);
+}
+#gitBtn{
+    padding: 2%;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    margin-top: 4%;
+    margin-left: 2%;
+    display: flex;
+    width: 80px;
+    box-shadow: 1px 3px 24px 1px rgb(255, 255, 255, 0.5);
+}
+#gitBtn:hover {
+    background: rgb(199, 199, 199);
+}
+#gitBtn img{
+    height: 20px;
+    width: 20px;
+    margin-left: 8%;
+}
+#gitBtn a{
+    text-decoration: none;
+    color: black;
+}
+#linksDiv{
+    display: flex;
+}
+#choose{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-left: 44%;
+}
+#choose p {
+    padding: 1%;
+    margin-left: 4%;
+    font-size: 2rem;
+    cursor: pointer;
+}

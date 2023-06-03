@@ -1,0 +1,129 @@
+
+html{
+    scroll-behavior: smooth;
+}
+#mainDiv{
+    height: 700px;
+    margin-top: -1.6%;
+    box-sizing: border-box;
+    padding: 2%;
+}
+#fullname{
+    font-family: 'Caveat', cursive;
+    font-size: 7rem;
+}
+#name{
+    margin-top: 12%;
+    font-size: 2.4rem;
+    line-height: 28px;
+    text-align: center;
+    z-index: 10;
+    transition: 2s ease-in;
+    animation: fadein .8s ease-in-out;
+}
+#dev{
+    font-family: 'Caveat', cursive;
+}
+#scroll{
+}
+@keyframes fadein {
+    0%{opacity: 0;}100%{opacity: 1;}
+}
+#mainWrapper0{
+    height: 648px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1%;
+    overflow-x: hidden;
+}
+#logoImg{
+    height: 30px;
+    width: 30px;
+    margin-right: 6%;
+}
+#contactDiv{
+    margin-left: 4.6%;
+}
+#logoImg:hover{
+    transform: scale(1.08);
+}
+
+#dot{
+    position: relative;
+    z-index: 1;
+    height: 760px;
+    width: 760px;
+    background: MediumSpringGreen;
+    border-radius: 50%;  
+    margin-top: -96%;
+    margin-left: -30%;
+    animation: move 22s ease-in-out infinite;
+}   
+#blob{
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    background-color: gold;
+    z-index: 10;
+    animation: circle 6.6s infinite;
+    border-radius: 50%;
+    margin-left: 70%;
+}
+@keyframes circle {
+    0%{
+        transform: translateX(140px);
+    }  
+    50%{
+        transform: translateY(-140px);
+    } 
+    75%{
+        transform: translateY(140px);
+    }
+    100%{
+        transform: translateX(140px);
+    }
+}
+@keyframes slidein {
+    0% { 
+        transform: translateY(100px);
+    }
+    100%   { 
+        transform: translateY(0);
+    }   
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    #name {
+        line-height: 70px;
+        margin-left: 20%;
+        margin-top: 40%;
+        font-size: 2rem;
+        margin-right: 10%;
+    }#dot{
+        height: 600px;
+        width: 600px;
+    }
+    #T{
+        height: 540px;
+        position: relative;
+        z-index: 8;
+        transform: scaleX(-1);
+    }
+    #blob{
+        margin-left: 0%;
+    }
+}

@@ -1,0 +1,42 @@
+
+#code{
+    height: 2600px;
+}
+#codeh1{
+    margin-left: 10%;
+    font-size: 2.4rem;
+    line-height: 30px;
+}
+#codeh1 p {
+    font-weight: 200;
+}
+#codeImg{
+    height: 400px;
+    width: 700px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 34px 2px rgb(0, 0, 0, 0.8);
+    margin-left: 10%;
+}
+#codeDetails{
+    display: flex;
+    width: 100%;
+    margin-top: 26%;
+}
+#codeImgWrapper{
+    width: 70%;
+}
+#codeDesc{
+    width: 30%;
+    margin-left: 10%;
+}
+#codeDesc h1{
+    font-size: 2.8rem;
+}
+#codeDesc h3{
+    font-size: 1.4rem;
+}
+#codeDesc p {
+    font-size: 2.2rem;
+    color: grey;
+    font-weight: 200;
+}
