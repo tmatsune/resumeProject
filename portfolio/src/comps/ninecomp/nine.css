@@ -10,10 +10,10 @@
     z-index: 100;
     font-family: 'VT323', monospace;
     filter: blur(.6px);
-    border-left: inset 15px rgb(80, 80, 80);
-    border-top: inset 15px rgb(80, 80, 80);
-    border-right: inset 15px rgb(40, 40, 40);
-    border-bottom: inset 15px rgb(40, 40, 40);
+    border-left: 15px inset rgb(80, 80, 80);
+    border-top: 15px inset rgb(80, 80, 80);
+    border-right: 15px inset rgb(40, 40, 40);
+    border-bottom: 15px inset rgb(40, 40, 40);
 }
 #name h2{
     font-weight: 200;
@@ -23,7 +23,7 @@
     height: 100px;
     width: 160px;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 2.2%;
     animation: loadup 1.6s ease-in;
 }
 #windowsFile p{
@@ -84,11 +84,35 @@
         opacity: 1;
     }
 }
-#startBtn{
-    border: inset;  
+
+#startup{
+    height: 500px;
+    width: 500px;
+    background: black;
     position: absolute;
-    margin-left: 46%;
-    margin-top: 22%;
+    margin-left: 11.4%;
+    margin-top: 6%;
+    box-sizing: border-box;
+    padding: 4%;
+    font-family: 'VT323', monospace;
+    width: 80%;
+    color: rgb(0, 215, 0);
+}
+#startup h1{
+
+}
+#space{
+    height: 30px;
+    width: 20px;
+    background-color: rgb(0, 215, 0);
+    animation: flash .8s linear infinite;
+}
+
+#startBtn{
+    border: inset; 
+    height: 40px;
+    margin-left: 0%;
+    margin-top: 2%;
     border-left: 2px inset rgb(138, 138, 138, 0.4);
     border-top: 2px inset rgb(138, 138, 138, 0.4);
     border-right: 2px inset rgb(0, 0, 0);
@@ -96,6 +120,25 @@
     font-family: 'VT323', monospace;
     font-size: 2rem;
 }
+
+#IntwindowsFile {
+    position: absolute;
+    height: 100px;
+    width: 160px;
+    text-align: center;
+    margin-top: -38.6%;
+    margin-left: 12%;
+    color: white;
+    animation: loadup 1.6s ease-in;
+}
+#IntwindowsFile p {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: -14%;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 780px) {
     #nine{
         border-left: inset 10px rgb(80, 80, 80);
@@ -121,5 +164,25 @@
         width: 160px;
         margin-top: 8%;
     } 
+    #startup {
+        transform: scale(.8);
+    }
+    #startBtn {
+        border: inset;
+        height: 40px;
+        margin-left: 2%;
+        margin-top: 0%;
+        font-size: 2rem;
+    }
+    #IntwindowsFile {
+        position: absolute;
+        height: 100px;
+        width: 160px;
+        text-align: center;
+        margin-top: -24.6%;
+        margin-left: 32%;
+        color: white;
+        animation: loadup 1.6s ease-in;
+    }
 
 }

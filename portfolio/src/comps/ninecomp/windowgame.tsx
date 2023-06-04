@@ -17,11 +17,10 @@ function WindowGame({toggle}: Toggle) {
     const [start, setStart] = useState(false)
 
     function startGame() {
-        if(start) {
-            setStart(false)
-        }else{
+        if(!start) {
             setStart(true)
         }
+
     }
     // Inoput Handler
     type UserInputs = {
