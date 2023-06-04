@@ -13,7 +13,7 @@ import {motion} from "framer-motion"
 
 const CONTACT = [G, IG, IN]
 
-const LINKS = ["https://github.com/tmatsune", "https://github.com/tmatsune", "https://github.com/tmatsune"]
+const LINKS = ["https://github.com/tmatsune", "https://github.com/tmatsune", "https://www.linkedin.com/in/terence-matsune-bb4957195/e"]
 function Main() {  //<img alt="" id="T" src={T}></img>
 
     const scrollDiv = useRef<HTMLDivElement|null>(null)
