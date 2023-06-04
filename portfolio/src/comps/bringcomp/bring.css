@@ -24,13 +24,12 @@
 }
 @media only screen and (max-width: 780px) {
     #bring{
-        height: 1000px;
+        height: 1800px;
+        display: inline;
     }
-    #descWrapper {
-        display: flex;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 6%;
-        margin-left: 4%;
+    #text{
+        transform: scale(.9);
+        line-height: 40px;
     }
+
 }

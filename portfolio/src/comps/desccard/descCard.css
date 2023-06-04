@@ -31,17 +31,10 @@
 }
 @media only screen and (max-width: 780px) {
     #descCard {
-        margin-top: 16%;
-        height: 280px;
-        width: 160px;
-        border-radius: 12px;
-        margin-left: 1%;
-        padding: 6%;
-        font-size: .8rem;
+        transform: scale(.6);
+        margin-left: -18%;
     }
     #descImg {
-        height: 50px;
-        width: 50px;
-        margin-left: 32%;
+
     }
 }

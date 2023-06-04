@@ -25,7 +25,7 @@ function Main() {  //<img alt="" id="T" src={T}></img>
     }
     
     return (
-
+ 
         <div id="mainDiv">  
             <div id="dummyDiv" ref={scrollDiv}></div>
             <div id="name">

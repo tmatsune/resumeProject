@@ -29,6 +29,9 @@
 }
 @media only screen and (max-width: 780px) {
     #nav h1{
-        left: 60%;
+        left: 40%;
+    }
+    #windowsImg{
+        margin-left: 16%;
     }
 }

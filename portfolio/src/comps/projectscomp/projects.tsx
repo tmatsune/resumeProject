@@ -66,7 +66,7 @@ function Projects() {
                     return (
                         <div id="projectsWrapper" key={idx}>
                             <div id="proj1" >
-                           <ProjectImg imgSrc={item.imgSrc} prImgs={item.prImgs}></ProjectImg>
+                            <ProjectImg imgSrc={item.imgSrc} prImgs={item.prImgs}></ProjectImg>
                             <ProjDesc obj={item} margin={-8}></ProjDesc>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ function ProjDesc({obj, margin}:projectDesc,) {
         <div id="projDesc" style={{}}>
             <h1 >{name}</h1>
             <p>{projDesc}</p>
-            <div>
+            <div>  
             {
                 techs.map((item, idx) => {
                     return ( <img id="techs" alt='' src={item} key={idx}></img>)

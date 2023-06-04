@@ -21,7 +21,7 @@
     border-radius: 10px;
     background-color: rgb(6, 6, 6);
     color: rgb(0, 209, 24);
-    filter: blur(.42px);
+    filter: blur(.32px);
     margin-left: 10%;
     box-shadow: 1px 12px 24px 6px rgb(0, 0, 0, 0.8);
 }
@@ -29,8 +29,6 @@
     font-weight: 200;
     width: 90%;
     margin-left: 4%;
-
-  
     display: inline-block;
 }
 #persDesc p {
@@ -69,5 +67,24 @@
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+@media only screen and (max-width: 780px) {
+    #aboutTxt{
+        transform: scale(.8);
+        margin-left: 4%;
+    }
+    #persWrapper {
+        transform: scale(.46);
+        margin-left: -50%;
+        height: 940px;
+        width: 800px;
+        margin-top: -70%;
+    }
+    #persDesc p{
+        font-size: 1.6rem;
+    }
+    #inp {
+        font-size: 1.6rem;
     }
 }

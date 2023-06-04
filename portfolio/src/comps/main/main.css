@@ -48,17 +48,6 @@ html{
     transform: scale(1.08);
 }
 
-#dot{
-    position: relative;
-    z-index: 1;
-    height: 760px;
-    width: 760px;
-    background: MediumSpringGreen;
-    border-radius: 50%;  
-    margin-top: -96%;
-    margin-left: -30%;
-    animation: move 22s ease-in-out infinite;
-}   
 #blob{
     height: 14px;
     width: 14px;
@@ -107,21 +96,17 @@ html{
     }
 }
 @media only screen and (max-width: 780px) {
+    #fullname{
+        margin-left: -20%;
+        font-size: 6.6rem;
+    }
     #name {
         line-height: 70px;
         margin-left: 20%;
-        margin-top: 40%;
+        margin-top: 20%;
+        margin-right: 20%;
+        transform: scale(.8);
         font-size: 2rem;
-        margin-right: 10%;
-    }#dot{
-        height: 600px;
-        width: 600px;
-    }
-    #T{
-        height: 540px;
-        position: relative;
-        z-index: 8;
-        transform: scaleX(-1);
     }
     #blob{
         margin-left: 0%;

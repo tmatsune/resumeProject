@@ -1,0 +1,29 @@
+
+#windowgame{
+    height: 500px;
+    width: 660px;
+    position: absolute;
+    background-color: rgb(175, 175, 175);
+    margin-left: 30%;
+    margin-top: -34%;
+}
+#gameCanvas{
+    margin-top: 1.2%;
+    margin-left: -2.2%;
+}
+#gameBtn{
+    border-left: 4px inset rgb(138, 138, 138, 0.4);
+    border-top: 4px inset rgb(138, 138, 138, 0.4);
+    border-right: 4px inset rgb(0, 0, 0);
+    border-bottom: 4px inset rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    font-size: 1.6rem;
+    margin-left: 10%;
+}
+@media only screen and (max-width: 780px) {
+    #windowgame{
+        transform: scale(.54);
+        margin-left: -34%;
+        margin-top: -124%;
+    }
+}

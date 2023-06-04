@@ -68,3 +68,14 @@
     filter: grayscale(90%);
     -webkit-filter: grayscale(100%);
 }
+@media only screen and (max-width: 780px) {
+    #ninefile {
+        transform: scale(.6);
+        height: 520px;
+        width: 460px;
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        background-color: rgb(172, 172, 172);
+    }
+}

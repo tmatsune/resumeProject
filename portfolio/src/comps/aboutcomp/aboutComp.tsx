@@ -8,11 +8,13 @@ function About() {
     const [about1, setAbout1] = useState('')
     const [emailTxt, setEmail] = useState('')
 
+    const [canStart, setCanStart] = useState(true)
+
     const [show0, setShow0] = useState(true)
     const [show, setShow] = useState(false)
     const [showInp, setShowInp] = useState(false)
     const txt = "&emsp; cout<< I am a self-taught full-stack developer << endl;<br></br>&emsp; cout<< I have made mutiple websites and have used mutiple frameworks and tech stacks;"
-    const txt1 = " cout<< You can reach me by sending an email below, click '\\' to send;"
+    const txt1 = " cout<< You can reach me by sending an email below, click '0' to send, '9' to reset;"
     // '\u{01f4a1}'
     // '\u{&emsp;}'
 
@@ -49,13 +51,43 @@ function About() {
         }, 15200)
 
     }
-
+    //    KEYINPUTS
+    type UserInputs = {
+        keyinputs: string[];
+    }
+    const inputHanlder: UserInputs = {
+        keyinputs: []
+    }
     window.addEventListener('keydown', e => {
-        if (e.key === "Enter") {
-            callBoth()
+        if ( (e.key === 'Enter' 
+            || e.key === '0'
+            || e.key === '9'
+            || e.key === '7')
+            && inputHanlder.keyinputs.indexOf(e.key) === -1
+        ) {
+            inputHanlder.keyinputs.push(e.key);
+            console.log(inputHanlder.keyinputs)
         }
-        if (e.key === '\\') {
-            send()
+    })
+    window.addEventListener('keyup', e => {
+        if ( e.key === "Enter"
+            || e.key === "0"     
+            || e.key === '9'
+            || e.key === "7"
+            ) {  
+            if(inputHanlder.keyinputs.indexOf('Enter') > -1){
+                if (canStart) {
+                    callBoth()
+                    setCanStart(false)
+                }   
+            }
+            if(inputHanlder.keyinputs.indexOf('0') > -1) {
+                send()
+            }
+            if(inputHanlder.keyinputs.indexOf('9') > -1) {
+                reset()
+            }
+            inputHanlder.keyinputs.splice(inputHanlder.keyinputs.indexOf(e.key), 1)
         }
     })
 
@@ -68,6 +100,13 @@ function About() {
         mail.href = `mailto:matsuneterence@gmail.com?Subject=application&body=${emailTxt}`;
         window.open(mail.href);
     }
+    const reset = () => {
+        setAbout('')
+        setAbout1('')
+        setShow(false)
+        setShowInp(false)
+    }
+
     return (
         <div id="about">
             <div id="txtWrapper">
@@ -82,7 +121,7 @@ function About() {
                             <p>#include &lt;string&gt;</p>
                             <p>useing namespace std;</p>
                             <p>int main() {wrap}</p>
-                            <p>&emsp; {cout}click Enter;
+                            <p>&emsp; {cout}click 'Enter';
 
                             {
                                 show0 ? (<span id="space">|</span>) : (null)

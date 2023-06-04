@@ -8,8 +8,12 @@ import WIN3 from "../../imgs/ninet/gam.png"
 import LOGO from "../../imgs/ninet/windo.png"
 
 import NineFile from "./ninefile"
+import WindowMusic from "./windowmusic"
+import WindowGame from "./windowgame"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
+const launchsound = require('../../sound/launch.mp3');
+const launch = require("../../sound/launch2.mp3");
 
 type Toggle = {
     toMainPage: () => void
@@ -27,37 +31,78 @@ const WINDOWICONS = [
     {imgSrc: WIN2, title: 'Music'}, 
     {imgSrc: WIN3, title: 'Games'}, 
 ]
+
+
 function Ninety( {toMainPage}: Toggle ) {
+    
     const [showFile, setShowFile] = useState(false)
+    const [showMusic, setShowMusic] = useState(false)
+    const [showGame, setShowGame] = useState(false)
+
+    const [loadPage, setLoad] = useState(false)
+    let audio = new Audio(launchsound)
+    let audio2 = new Audio(launch)
 
     const toggleFile = () => {
         setShowFile(!showFile)
     }
-    const temp = () => {
+    const toggleMusic = () => {
+        setShowMusic(!showMusic)
     }
-    //https://github.com/tmatsune/portfolio.git
+    const toggleGame = () => {
+        setShowGame(!showGame)
+    }
+
+    const loadUp = () => {
+        setLoad(!loadPage)
+        Launch()
+    }
+    const Launch = () => {
+        audio.load()
+        audio.play();
+    }
+    const MainPage = () => {
+        toMainPage()
+        audio2.play()
+    }
+
     return (
         <div id="nine">
             <div id="static"></div>
             <div id="static1"></div>
-            <img alt='' id="mainLogo" onClick={toMainPage} src={LOGO}></img>
-            <Icon obj={WINDOWICONS[0]} toggle={toMainPage}></Icon>
-            <Icon obj={WINDOWICONS[1]} toggle={toggleFile}></Icon>
-            <Icon obj={WINDOWICONS[2]} toggle={temp}></Icon>  
-            <Icon obj={WINDOWICONS[3]} toggle={temp}></Icon>
             {
-                showFile ? (<NineFile toggle={toggleFile} toMainPage={toMainPage}></NineFile>) : (null)
+                loadPage ? (
+                    <div>
+                        <img alt='' id="mainLogo" onClick={MainPage} src={LOGO}></img>
+                        <Icon obj={WINDOWICONS[0]} toggle={MainPage}></Icon>
+                        <Icon obj={WINDOWICONS[1]} toggle={toggleFile}></Icon>
+                        <Icon obj={WINDOWICONS[2]} toggle={toggleMusic}></Icon>  
+                        <Icon obj={WINDOWICONS[3]} toggle={toggleGame}></Icon>
+                    </div>
+                ) : (<button onClick={loadUp} id="startBtn">Start</button>)
             }
-            <NavBottom toMainPage={toMainPage}></NavBottom>
+
+            {
+                showFile ? (<NineFile toggle={toggleFile} toMainPage={MainPage}></NineFile>) : (null)
+            }
+            {
+                showMusic ? (<WindowMusic toggle={toggleMusic}></WindowMusic>) : (null)
+            }
+            {
+                showGame ? (<WindowGame toggle={toggleGame}></WindowGame>) : (null)
+            }
+            <NavBottom toMainPage={MainPage}></NavBottom>
         </div>  
     )
 }
+
 function NavBottom({toMainPage}:Toggle) {
     return (
         <div id="navbottom" onClick={toMainPage}>
             <button id='navBtmBtn'>
                 <img alt='' id="windLogo" src={LOGO}></img>Start
             </button>
+            <h1 id='time'>7:20 PM</h1>
         </div>
     )
 }

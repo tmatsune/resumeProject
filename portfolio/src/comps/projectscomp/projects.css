@@ -2,7 +2,6 @@
 
 #projects{
     height: 3200px;
-
 }
 #title{
     text-align: left;
@@ -29,4 +28,16 @@
     padding: 2%;
     display: flex;
     margin-top: 24%;
+}
+@media only screen and (max-width: 780px) {
+    #projects{
+        height: 3400px;
+    }
+    #title{
+        line-height: 58px;
+        transform: scale(.9);
+    }
+    #proj1{
+        display: inline;
+    }
 }

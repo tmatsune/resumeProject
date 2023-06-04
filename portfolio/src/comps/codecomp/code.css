@@ -40,3 +40,30 @@
     color: grey;
     font-weight: 200;
 }
+@media only screen and (max-width: 780px) {
+    #codeh1 {
+        margin-left: 10%;
+        font-size: 2rem;
+        line-height: 80px;
+    }
+    #codeImg {
+        height: 200px;
+        width: 320px;
+        border-radius: 8px;
+        box-shadow: 2px 4px 34px 2px rgb(0, 0, 0, 0.8);
+        margin-left: 10%;
+    }
+    #codeDetails {
+        display: inline;
+        width: 100%;
+        margin-top: 26%;
+    }
+    #codeImgWrapper{
+        margin-top: 10%;
+    }
+    #codeDesc{
+        width: 80%;
+        margin-left: 14%;
+        margin-top: 30%;
+    }
+}
