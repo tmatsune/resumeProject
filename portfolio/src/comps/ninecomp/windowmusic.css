@@ -3,11 +3,28 @@
     height: 244px;
     width: 600px;
     background: rgb(167, 167, 167);
-    border-width: 48px;
+
     position: absolute;
-    margin-left: 38%;
-    margin-top: -20%;
+    left: 308px;
+    top: 200px;
 }
+#mnineTop {
+    position: absolute;
+    margin-top: 1px;
+    width: 98%;
+    margin-left: 6px;
+    background: rgb(0, 0, 162);
+    height: 30px;
+}
+#mnineTop h1 {
+    position: absolute;
+    margin-top: 0%;
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 1%;
+}
+
+
 #musicTitle{
     margin-top:7.8%;
     width: 97%;
@@ -99,7 +116,7 @@
     #music{
         width: 590px;
         transform: scale(.6);
-        margin-left: -20%;
-        margin-top: -70%;
+        left: -86px;
+        top: 70px;
     }
 }

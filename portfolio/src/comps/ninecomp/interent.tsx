@@ -2,6 +2,7 @@
 import "./internet.css"
 import EXP from "../../imgs/ninet/explore.png"
 import { useState } from "react"
+import useDragger from "../../context/useDragger"
 
 const int = require('../../sound/intcut.mp3')
 const launch = require('../../sound/launch2.mp3')
@@ -29,7 +30,7 @@ function Internet({toggle, toMainPage}:Toggle) {
 
     return (
         <div id='internet'>
-            <div id="nineTop">
+            <div id="InineTop">
                 <h1>Internet</h1>
                 <button id="exitBtn" onClick={toggle}>X</button>
             </div>

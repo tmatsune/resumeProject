@@ -2,12 +2,15 @@
 
 import "./ninefile.css"
 import T from "../../imgs/profile/t.png"
+import useDragger from "../../context/useDragger"
 
 type Toggle = {
     toggle: () => void;
     toMainPage: () => void;
 }
 function NineFile({toggle, toMainPage}: Toggle) {
+
+    useDragger('nine', 'nineTop', 'ninefile')
     return(
         <div id="ninefile">
             <div id="nineTop">

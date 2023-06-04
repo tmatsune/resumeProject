@@ -4,24 +4,24 @@
     height: 500px;
     width: 440px;
     position: absolute;
-    left: 20%;
-    top: 10%;
+    left: 300px;
+    top: 90px;
     background-color: rgb(172, 172, 172);
 }
 #nineTop{
     position: absolute;
-    top: 1%;
+    top: 6px;
     width: 98%;
-    margin-left: 1%;
+    margin-left: 4px;
     background: rgb(0, 0, 162);
     height: 30px;
 }
 #nineTop h1{
     position: absolute;
-    margin-top: 0%;
+    margin-top: 1px;
     color: white;
     font-size: 1.8rem;
-    margin-left: 1%;
+    margin-left: 1px;
 }
 #exitBtn{
     border: inset;  

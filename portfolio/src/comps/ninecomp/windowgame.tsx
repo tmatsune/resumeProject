@@ -2,6 +2,7 @@
 import { statSync } from "fs";
 import "./windowgame.css"
 import { useState, useEffect, useRef } from "react";
+import useDragger from "../../context/useDragger";
 
 const pong = require('../../sound/pong.mp3')
 const score = require('../../sound/score.mp3')
@@ -20,7 +21,6 @@ function WindowGame({toggle}: Toggle) {
         if(!start) {
             setStart(true)
         }
-
     }
     // Inoput Handler
     type UserInputs = {
@@ -50,7 +50,7 @@ function WindowGame({toggle}: Toggle) {
         }
     })
 
-    // GameItems
+    // GameItems    
     // background
     type Background = {
         h: number;
@@ -263,9 +263,11 @@ function WindowGame({toggle}: Toggle) {
         toggle()
     }
 
+    useDragger('nine', 'GnineTop', 'windowgame')
+
     return (
         <div id="windowgame">
-            <div id="nineTop">
+            <div id="GnineTop">
                 <h1>Pong Game</h1>
                 <button id="exitBtn" onClick={Exit}>X</button>
             </div>

@@ -72,6 +72,7 @@ function Ninety( {toMainPage}: Toggle ) {
         toMainPage()
         audio2.play()
     }
+    
 
     return (
         <div id="nine">
@@ -90,7 +91,7 @@ function Ninety( {toMainPage}: Toggle ) {
                 ) : (   //<button onClick={loadUp} id="startBtn" >Start</button>
                     <div id="startup" onClick={loadUp}> 
                         <h1 >Terence Matsune Porfolio</h1>
-                        <h2> Interactive portolfio you can stay on this screen</h2>
+                        <h2> Interactive portfolio you can stay on this screen</h2>
                         <h2> Or click on Internet/ My Computer Icon to View Resume</h2>
                         <h2> Click on the screen to view <span id="space">|</span></h2>
 

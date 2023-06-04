@@ -1,5 +1,6 @@
 import "./windowmusic.css"
 import { useState, useEffect } from "react";
+import useDragger from "../../context/useDragger";
 
 const song = require("../../sound/song1.mp3");
 
@@ -16,6 +17,8 @@ function WindowMusic({toggle}: Toggle) {
     const [timer, setTimer] = useState(30)
 
     const [currSong, setCurrSong] = useState(audio)
+
+    useDragger('nine', 'mnineTop', 'music')
 
     useEffect(() => {
         const x = setInterval(() => {
@@ -57,7 +60,7 @@ function WindowMusic({toggle}: Toggle) {
     
     return (
         <div id='music'>
-            <div id="nineTop" style={{marginTop: '1%'}}>
+            <div id="mnineTop" style={{marginTop: '1%'}}>
                 <h1>Music Player</h1>
                 <button id="exitBtn" onClick={toggleBoth}>X</button>
             </div>
