@@ -256,7 +256,7 @@ function WindowGame({toggle}: Toggle) {
         ball.yspeed = 0
         setStart(false)
     }
-    function Exit() {
+    function Exit() { 
         ball.xspeed = 0
         ball.yspeed = 0
         setStart(false)

@@ -41,16 +41,21 @@ function useDragger(parentNode: string, id: string, window: string) {
             wind.style.top = `${nextY}px`
             wind.style.left = `${nextX}px`
         }
+
         target.addEventListener('mousedown', onMouseDown);
         target.addEventListener('mouseup', onMouseUp);
+        wind.addEventListener('mouseup', onMouseUp);
+        wind.addEventListener('mousedown', onMouseDown);
         wind.addEventListener('mousemove', onMouseMove);
         wind.addEventListener('mouseleave', onMouseUp);
 
         const cleanup = () => {
-        target.removeEventListener('mousedown', onMouseDown);
-        target.removeEventListener('mouseup', onMouseUp);
-        wind.removeEventListener('mousemove', onMouseMove);
-        wind.removeEventListener('mouseleave', onMouseUp);
+            target.removeEventListener('mousedown', onMouseDown);
+            target.removeEventListener('mouseup', onMouseUp);
+            wind.addEventListener('mouseup', onMouseUp);
+            wind.addEventListener('mousedown', onMouseDown);
+            wind.removeEventListener('mousemove', onMouseMove);
+            wind.removeEventListener('mouseleave', onMouseUp);
         }
 
     return cleanup;
