@@ -21,7 +21,7 @@ function Code() {
         <div id="code">
         <div id="codeh1">
             <h1>Code Snipits</h1>
-            <p>Code examples of how previous work</p>
+            <p>Code examples of previous work</p>
         </div>
             {
                 CodeSnipit.map((item, idx) => {

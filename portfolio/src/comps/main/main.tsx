@@ -23,6 +23,8 @@ function Main() {  //<img alt="" id="T" src={T}></img>
             scrollDiv.current?.scrollIntoView({behavior:"smooth"})
         }
     }
+    const right = '<'
+    const left = '>'
     
     return (
  

@@ -27,6 +27,7 @@ function Internet({toggle, toMainPage}:Toggle) {
             toggle()
         }, 2900);
     }
+    useDragger('nine', 'InineTop', 'internet')
 
     return (
         <div id='internet'>

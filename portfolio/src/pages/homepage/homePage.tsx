@@ -12,7 +12,7 @@ import Ninety from "../../comps/ninecomp/nine";
 import { useState } from "react";
 
 function HomePage() {
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     const toggle = () => {
         setShow(!show)
     }

@@ -5,7 +5,8 @@ type BackToNine = {
     backToNine: () => void;
 }
 function NavBar({backToNine}:BackToNine) {
-
+    const right = '<'
+    const left = '>'
     return (
         <div id="nav">
             <img id="windowsImg" alt=''src={NINE} onClick={backToNine}></img>

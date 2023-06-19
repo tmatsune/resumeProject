@@ -11,7 +11,7 @@ import {motion} from "framer-motion"
 const DESC = [
     {"title":"API", "desc":"Familar with API requests from both backend and frontend.", 
     "imgSrc": `${D}`},
-    {"title":"Backend", "desc": "I can connect with datbases and have made projects with sql and non-sql databases", 
+    {"title":"Backend", "desc": "I can connect with databases and have made projects with sql and non-sql databases", 
     "imgSrc": `${D1}`},
     {"title":"Frontend", "desc": "I have make mutiple projects using react and familiar with hooks, state, and typescript",
      "imgSrc": `${D2}`},
@@ -22,7 +22,7 @@ function Bring() {
         <div id="bring">
             <div id="text">
                 <h1>My <span style={{textDecoration: ''}}>Skills</span></h1>
-                <p>I am a full-stack developer working to become <br></br>
+                <p>I am a full-stack developer and I <br></br>
                 make modern frontend designs with effeicent backend services</p>
             </div>
             <div id="descWrapper">

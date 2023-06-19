@@ -31,7 +31,7 @@
   z-index: 12;
 }
 #lightBtn {
-  position: absolute;
+  position: absolute; 
   left: 3%;
   top: 3%;
   cursor: pointer;
