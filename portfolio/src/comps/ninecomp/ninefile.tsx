@@ -31,7 +31,7 @@ function NineFile({toggle, toMainPage}: Toggle) {
                 <h2 style={{marginLeft: '6%'}}>-TypeScript</h2>
                 <h2>About</h2>
                 <h3 style={{marginLeft: '6%'}}>Full-stack Developer, Familiar with both frontend and backend</h3>
-                <img id="ninePic" alt='' src={T}></img>
+                
             </div>
         </div>
     )
