@@ -32,7 +32,7 @@ function Main() {  //<img alt="" id="T" src={T}></img>
             <div id="dummyDiv" ref={scrollDiv}></div>
             <div id="name">
                 <h1 id="fullname">Terence Matsune</h1>
-                <h2>Full-Stack Developer</h2>
+                <h2>Computer Science Major</h2>
                 <div id="blob"></div>
                 <div id="contactDiv">
                 {
